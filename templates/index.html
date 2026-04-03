@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Auditor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #dcdcdc;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            width: 350px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+        }
+
+        input[type="file"] {
+            margin: 15px 0;
+        }
+
+        button {
+            background: #2a5298;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1e3c72;
+        }
+
+        .footer {
+            margin-top: 80px;
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>💰 Expense Auditor</h1>
+    <p>Smart expense validation powered by policy-based auditing</p>
+
+    <div class="card">
+        <h3>Upload Receipt</h3>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="receipt" required><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Project Initialized • First Phase Development</p>
+    </div>
+</div>
+
+</body>
+</html>
