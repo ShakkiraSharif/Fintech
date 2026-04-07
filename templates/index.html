@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinTech | Advanced Expense Auditor (Final v6)</title>
+    <title>FinTech | AI Expense Auditor</title>
     <link rel="stylesheet" href="/static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="is-logged-out">
 
@@ -18,10 +18,12 @@
 
     <!-- Login Overlay -->
     <div id="login-overlay" class="modal-overlay" style="display: flex;">
-        <div class="glass-card" style="width: 440px; text-align: center; padding: 3.5rem;">
-            <span style="font-size: 3rem; margin-bottom: 1rem; display: block;">💎</span>
-            <h1 style="margin-bottom: 0.5rem;">FinTech Auditor</h1>
-            <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.9rem;">Policy-First Corporate Expense Management</p>
+        <div class="glass-card" style="width: 440px; text-align: center; padding: 4rem 3rem; border: 1px solid rgba(99, 102, 241, 0.2);">
+            <div style="width: 80px; height: 80px; background: rgba(99, 102, 241, 0.1); border-radius: 24px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem;">
+                <img src="/static/logo.png" style="width: 48px; height: 48px; object-fit: contain;">
+            </div>
+            <h1 style="margin-bottom: 0.75rem; font-family: 'Outfit'; font-weight: 800;">FinTech Audit</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2.5rem; font-size: 0.95rem; line-height: 1.6;">AI-Powered Corporate Compliance <br> (India Standard Verifier)</p>
             
             <div class="input-group">
                 <input type="text" id="username-input" placeholder="Enter Username (e.g., Alex)" required>
@@ -38,10 +40,19 @@
         </div>
     </div>
 
-    <!-- Sidebar -->
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <div class="logo">
+            <img src="/static/logo.png" alt="Logo">
+            <span>FinTech</span>
+        </div>
+        <button onclick="logout()" style="padding: 0.5rem 1rem; font-size: 0.8rem; background: rgba(239, 68, 68, 0.1); color: var(--danger); border: 1px solid rgba(239, 68, 68, 0.2);">Exit</button>
+    </header>
+
+    <!-- Sidebar (Desktop) -->
     <aside id="main-sidebar" style="display: none;">
         <div class="logo">
-            <span style="font-size: 1.5rem;">💎</span>
+            <img src="/static/logo.png" alt="Logo">
             <span>FinTech Audit</span>
         </div>
         <nav>
@@ -61,24 +72,39 @@
                     <p id="user-role-badge" style="font-size: 0.75rem; color: var(--text-muted);">Employee</p>
                 </div>
             </div>
-            <button onclick="logout()" style="width: 100%; border: 1px solid var(--border); font-size: 0.875rem;">Logout</button>
+            <button onclick="logout()" style="width: 100%; border: 1px solid var(--border); font-size: 0.875rem; background: rgba(255,255,255,0.02);">Logout</button>
         </div>
     </aside>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav" id="mobile-nav" style="display: none;">
+        <div class="mobile-nav-item active" onclick="switchView('employee')" id="m-nav-employee">
+            <span>👤</span>
+            <div>Portal</div>
+        </div>
+        <div class="mobile-nav-item" onclick="switchView('auditor')" id="m-nav-auditor">
+            <span>🛡️</span>
+            <div>Audit</div>
+        </div>
+    </nav>
 
     <!-- Main Content -->
     <main id="main-content" style="display: none;">
         <!-- Employee Portal -->
         <section id="view-employee" class="view-section active">
             <header>
-                <div>
-                    <h1>Expense Tracking</h1>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Upload receipts to check for policy violations (India Standard).</p>
+                <div class="hero-card" style="width: 100%; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(99, 102, 241, 0.1); margin-bottom: 2.5rem;">
+                    <h1 style="font-family: 'Outfit'; margin-bottom: 0.5rem;">Expense Intelligence</h1>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">Upload receipts to check for Indian corporate compliance violations (v12 Precision).</p>
                 </div>
             </header>
 
             <div class="upload-grid">
-                <div class="glass-card">
-                    <h3 style="margin-bottom: 1.5rem;">Submit Receipt</h3>
+                <div class="glass-card" style="border-top: 4px solid var(--primary);">
+                    <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:2rem;">
+                        <span style="font-size:1.5rem;">📤</span>
+                        <h3 style="font-family: 'Outfit';">Submit New Claim</h3>
+                    </div>
                     <form id="upload-form">
                         <div class="input-group">
                             <label>Expense Narrative / Purpose</label>
@@ -216,8 +242,12 @@
             if (sessionUser.username) {
                 document.getElementById('login-overlay').style.display = 'none';
                 document.getElementById('main-sidebar').style.display = 'flex';
+                // Show mobile nav if on small screen
+                if (window.innerWidth <= 768) {
+                    document.getElementById('mobile-nav').style.display = 'grid';
+                }
                 document.getElementById('main-content').style.display = 'block';
-                document.getElementById('user-display-name').innerText = sessionUser.username;
+                document.body.classList.remove('is-logged-out');
                 document.getElementById('user-role-badge').innerText = sessionUser.role.toUpperCase();
                 
                 if (sessionUser.role === 'auditor') { switchView('auditor'); }
@@ -232,9 +262,13 @@
             if (v === 'auditor') {
                 document.getElementById('nav-auditor').classList.add('active');
                 document.getElementById('nav-employee').classList.remove('active');
+                if(document.getElementById('m-nav-auditor')) document.getElementById('m-nav-auditor').classList.add('active');
+                if(document.getElementById('m-nav-employee')) document.getElementById('m-nav-employee').classList.remove('active');
             } else {
                 document.getElementById('nav-employee').classList.add('active');
                 document.getElementById('nav-auditor').classList.remove('active');
+                if(document.getElementById('m-nav-employee')) document.getElementById('m-nav-employee').classList.add('active');
+                if(document.getElementById('m-nav-auditor')) document.getElementById('m-nav-auditor').classList.remove('active');
             }
         }
 
