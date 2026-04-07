@@ -15,7 +15,7 @@ except Exception as e:
 from flask import Flask, render_template, request, jsonify, session
 
 app = Flask(__name__)
-app.secret_key = 'fintech-india-v12-precision'
+app.secret_key = 'finpolis-india-v12-precision'
 
 # Config
 UPLOAD_FOLDER = 'static/uploads'
@@ -266,4 +266,6 @@ def get_notifications():
     return jsonify(notifs.get(u, [])[-5:])
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5100)
+    # Bind to PORT if defined, otherwise default to 5100
+    port = int(os.environ.get('PORT', 5100))
+    app.run(host='0.0.0.0', port=port)

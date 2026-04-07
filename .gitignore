@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Data & Privacy
+data/*.json
+static/uploads/*
+!static/uploads/logo1.png
+
+# OS
+.DS_Store
+Thumbs.db

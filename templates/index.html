@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinTech | AI Expense Auditor</title>
+    <title>FinPolis | AI Expense Auditor</title>
     <link rel="stylesheet" href="/static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body class="is-logged-out">
 
     <!-- Notification Toast -->
-    <div id="toast-notif" class="glass-card" style="position: fixed; top: 1.5rem; right: 1.5rem; width: 320px; z-index: 2000; border-left: 5px solid var(--primary); padding: 1.5rem; display: none; animation: slideIn 0.3s ease-out forwards;">
+    <div id="toast-notif" class="glass-card"
+        style="position: fixed; top: 1.5rem; right: 1.5rem; width: 320px; z-index: 2000; border-left: 5px solid var(--primary); padding: 1.5rem; display: none; animation: slideIn 0.3s ease-out forwards;">
         <h4 id="toast-title" style="color: var(--primary);">System Alert</h4>
         <p id="toast-msg" style="font-size: 0.85rem; color: #fff; margin-top: 0.5rem;"></p>
-        <button onclick="closeToast()" style="margin-top: 1rem; padding: 0.4rem 1rem; font-size: 0.75rem;">Dismiss</button>
+        <button onclick="closeToast()"
+            style="margin-top: 1rem; padding: 0.4rem 1rem; font-size: 0.75rem;">Dismiss</button>
     </div>
 
     <!-- Login Overlay -->
     <div id="login-overlay" class="modal-overlay" style="display: flex;">
-        <div class="glass-card" style="width: 440px; text-align: center; padding: 4rem 3rem; border: 1px solid rgba(99, 102, 241, 0.2);">
-            <div style="width: 80px; height: 80px; background: rgba(99, 102, 241, 0.1); border-radius: 24px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem;">
-                <img src="/static/logo.png" style="width: 48px; height: 48px; object-fit: contain;">
+        <div class="glass-card"
+            style="width: 440px; text-align: center; padding: 4rem 3rem; border: 1px solid rgba(99, 102, 241, 0.2);">
+            <div
+                style="width: 80px; height: 80px; background: rgba(99, 102, 241, 0.1); border-radius: 24px; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem;">
+                <img src="/static/uploads/logo1.png" style="width: 48px; height: 48px; object-fit: contain;">
             </div>
-            <h1 style="margin-bottom: 0.75rem; font-family: 'Outfit'; font-weight: 800;">FinTech Audit</h1>
-            <p style="color: var(--text-muted); margin-bottom: 2.5rem; font-size: 0.95rem; line-height: 1.6;">AI-Powered Corporate Compliance <br> (India Standard Verifier)</p>
-            
+            <h1 style="margin-bottom: 0.75rem; font-family: 'Outfit'; font-weight: 800;">FinPolis Audit</h1>
+            <p style="color: var(--text-muted); margin-bottom: 2.25rem; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.02em;">Precision in every claim</p>
+
             <div class="input-group">
                 <input type="text" id="username-input" placeholder="Enter Username (e.g., Alex)" required>
             </div>
-            
+
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
                 <button onclick="login('employee')">Employee Login</button>
-                <button onclick="login('auditor')" style="background: var(--bg-dark); border: 1px solid var(--border);">Auditor Access</button>
+                <button onclick="login('auditor')"
+                    style="background: var(--bg-dark); border: 1px solid var(--border);">Auditor Access</button>
             </div>
             <p style="margin-top: 2rem; font-size: 0.7rem; color: var(--text-muted); line-height: 1.4;">
                 * Employee: Use any name. <br>
@@ -43,17 +52,18 @@
     <!-- Mobile Header -->
     <header class="mobile-header">
         <div class="logo">
-            <img src="/static/logo.png" alt="Logo">
-            <span>FinTech</span>
+            <img src="/static/uploads/logo1.png" alt="Logo">
+            <span>FinPolis</span>
         </div>
-        <button onclick="logout()" style="padding: 0.5rem 1rem; font-size: 0.8rem; background: rgba(239, 68, 68, 0.1); color: var(--danger); border: 1px solid rgba(239, 68, 68, 0.2);">Exit</button>
+        <button onclick="logout()"
+            style="padding: 0.5rem 1rem; font-size: 0.8rem; background: rgba(239, 68, 68, 0.1); color: var(--danger); border: 1px solid rgba(239, 68, 68, 0.2);">Exit</button>
     </header>
 
     <!-- Sidebar (Desktop) -->
     <aside id="main-sidebar" style="display: none;">
         <div class="logo">
-            <img src="/static/logo.png" alt="Logo">
-            <span>FinTech Audit</span>
+            <img src="/static/uploads/logo1.png" alt="Logo">
+            <span>FinPolis Audit</span>
         </div>
         <nav>
             <div class="nav-item active" onclick="switchView('employee')" id="nav-employee">
@@ -63,16 +73,19 @@
                 <span>🛡️</span> Auditor Home Page
             </div>
         </nav>
-        
+
         <div style="margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--border);">
             <div id="user-info" style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
-                <div id="user-avatar" style="width: 36px; height: 36px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700;">A</div>
+                <div id="user-avatar"
+                    style="width: 36px; height: 36px; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; font-weight: 700;">
+                    A</div>
                 <div>
                     <p id="user-display-name" style="font-size: 0.9rem; font-weight: 700;">User</p>
                     <p id="user-role-badge" style="font-size: 0.75rem; color: var(--text-muted);">Employee</p>
                 </div>
             </div>
-            <button onclick="logout()" style="width: 100%; border: 1px solid var(--border); font-size: 0.875rem; background: rgba(255,255,255,0.02);">Logout</button>
+            <button onclick="logout()"
+                style="width: 100%; border: 1px solid var(--border); font-size: 0.875rem; background: rgba(255,255,255,0.02);">Logout</button>
         </div>
     </aside>
 
@@ -93,9 +106,11 @@
         <!-- Employee Portal -->
         <section id="view-employee" class="view-section active">
             <header>
-                <div class="hero-card" style="width: 100%; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(99, 102, 241, 0.1); margin-bottom: 2.5rem;">
+                <div class="hero-card"
+                    style="width: 100%; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%); padding: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(99, 102, 241, 0.1); margin-bottom: 2.5rem;">
                     <h1 style="font-family: 'Outfit'; margin-bottom: 0.5rem;">Expense Intelligence</h1>
-                    <p style="color: var(--text-muted); font-size: 1.1rem;">Upload receipts to check for Indian corporate compliance violations (v12 Precision).</p>
+                    <p style="color: var(--text-muted); font-size: 1.1rem;">Upload receipts to check for Indian
+                        corporate compliance violations (v12 Precision).</p>
                 </div>
             </header>
 
@@ -108,16 +123,20 @@
                     <form id="upload-form">
                         <div class="input-group">
                             <label>Expense Narrative / Purpose</label>
-                            <textarea id="purpose" name="purpose" rows="3" placeholder="Explain the business objective (e.g., Client Gift)..." required></textarea>
+                            <textarea id="purpose" name="purpose" rows="3"
+                                placeholder="Explain the business objective (e.g., Client Gift)..." required></textarea>
                         </div>
                         <div class="input-group">
                             <label>Digital Receipt File</label>
                             <div class="dropzone" onclick="document.getElementById('receipt-input').click()">
                                 <span style="font-size: 2.25rem;">📸</span>
                                 <p style="margin-top: 1rem; color: var(--text-muted);">Drop Bill Image or PDF</p>
-                                <input type="file" id="receipt-input" name="receipt" style="opacity:0; position:absolute; pointer-events:none;" required>
+                                <input type="file" id="receipt-input" name="receipt"
+                                    style="opacity:0; position:absolute; pointer-events:none;" required>
                             </div>
-                            <p id="file-name" style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--primary); font-weight: 600;"></p>
+                            <p id="file-name"
+                                style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--primary); font-weight: 600;">
+                            </p>
                         </div>
                         <button type="submit" style="width: 100%;">Upload & AI Audit</button>
                     </form>
@@ -159,52 +178,90 @@
     <!-- Side-by-Side Audit Detail Modal (Three-Column View) -->
     <div id="audit-modal" class="modal-overlay">
         <div class="modal-content" style="max-width: 1240px; width: 95%;">
-            <div style="display: flex; width: 100%; border-bottom: 1px solid var(--border); padding: 1.5rem 2.5rem; justify-content: space-between; align-items: center;">
+            <div
+                style="display: flex; width: 100%; border-bottom: 1px solid var(--border); padding: 1.5rem 2.5rem; justify-content: space-between; align-items: center;">
                 <h2>Side-by-Side Audit View</h2>
-                <button onclick="closeModal()" style="background: transparent; color: var(--text-muted); font-size: 1.5rem;">&times;</button>
+                <button onclick="closeModal()"
+                    style="background: transparent; color: var(--text-muted); font-size: 1.5rem;">&times;</button>
             </div>
-            
+
             <div style="display: flex; min-height: 70vh;">
                 <!-- Column 1: Bill Image -->
-                <div style="flex: 1.2; padding: 2rem; border-right: 1px solid var(--border); background: #020617; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <img id="modal-img" src="" style="max-height: 60vh; max-width: 100%; border-radius: 0.5rem; box-shadow: 0 0 50px rgba(0,0,0,0.6);">
-                    <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-muted);">SOURCE EVIDENCE IMAGE</p>
+                <div
+                    style="flex: 1.2; padding: 2rem; border-right: 1px solid var(--border); background: #020617; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img id="modal-img" src=""
+                        style="max-height: 60vh; max-width: 100%; border-radius: 0.5rem; box-shadow: 0 0 50px rgba(0,0,0,0.6);">
+                    <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-muted);">SOURCE EVIDENCE IMAGE
+                    </p>
                 </div>
 
                 <!-- Column 2: Digital Extracted Data -->
                 <div style="flex: 1; padding: 2.5rem; border-right: 1px solid var(--border); overflow-y: auto;">
-                    <h4 style="color: var(--primary); margin-bottom: 2rem; font-size: 0.75rem; text-transform: uppercase;">Digital Records (OCR)</h4>
+                    <h4
+                        style="color: var(--primary); margin-bottom: 2rem; font-size: 0.75rem; text-transform: uppercase;">
+                        Digital Records (OCR)</h4>
                     <div style="display: flex; flex-direction: column; gap: 1.75rem;">
-                        <div class="input-group"><label>Merchant</label><p id="modal-merchant" style="font-weight: 800; font-size: 1.2rem;"></p></div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div class="input-group"><label>Total ₹</label><p id="modal-amount" style="font-weight: 800; color: var(--primary); font-size: 1.2rem;"></p></div>
-                            <div class="input-group"><label>Date Identified</label><p id="modal-date" style="font-weight: 500;"></p></div>
+                        <div class="input-group"><label>Merchant</label>
+                            <p id="modal-merchant" style="font-weight: 800; font-size: 1.2rem;"></p>
                         </div>
-                        <div class="input-group"><label>Policy Category</label><p id="modal-category" style="font-weight: 600; color: #fff;"></p></div>
-                        <div class="input-group"><label>Raw OCR Text (AI Processed)</label><p id="modal-ocr-raw" style="font-family: monospace; background: rgba(0,0,0,0.2); padding: 0.75rem; border-radius: 0.5rem; font-size: 0.7rem; color: #a5b4fc; word-break: break-all;"></p></div>
-                        <div class="input-group"><label>GST Components</label><p id="modal-gst" style="font-family: monospace; background: rgba(255,255,255,0.05); padding: 0.75rem; border-radius: 0.5rem; font-size: 0.85rem;"></p></div>
-                        <div class="input-group"><label>Narrative Input</label><p id="modal-purpose" style="font-style: italic; color: var(--text-muted); font-size: 0.85rem;"></p></div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="input-group"><label>Total ₹</label>
+                                <p id="modal-amount"
+                                    style="font-weight: 800; color: var(--primary); font-size: 1.2rem;"></p>
+                            </div>
+                            <div class="input-group"><label>Date Identified</label>
+                                <p id="modal-date" style="font-weight: 500;"></p>
+                            </div>
+                        </div>
+                        <div class="input-group"><label>Policy Category</label>
+                            <p id="modal-category" style="font-weight: 600; color: #fff;"></p>
+                        </div>
+                        <div class="input-group"><label>Raw OCR Text (AI Processed)</label>
+                            <p id="modal-ocr-raw"
+                                style="font-family: monospace; background: rgba(0,0,0,0.2); padding: 0.75rem; border-radius: 0.5rem; font-size: 0.7rem; color: #a5b4fc; word-break: break-all;">
+                            </p>
+                        </div>
+                        <div class="input-group"><label>GST Components</label>
+                            <p id="modal-gst"
+                                style="font-family: monospace; background: rgba(255,255,255,0.05); padding: 0.75rem; border-radius: 0.5rem; font-size: 0.85rem;">
+                            </p>
+                        </div>
+                        <div class="input-group"><label>Narrative Input</label>
+                            <p id="modal-purpose"
+                                style="font-style: italic; color: var(--text-muted); font-size: 0.85rem;"></p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Column 3: AI Audit Reasoning & Policy -->
                 <div style="flex: 1; padding: 2.5rem; overflow-y: auto; background: rgba(37, 99, 235, 0.05);">
-                    <h4 style="color: var(--primary); margin-bottom: 2rem; font-size: 0.75rem; text-transform: uppercase;">Policy Context & AI Verdict</h4>
-                    
-                    <div id="modal-policy-card" style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); padding: 1.5rem; border-radius: 1rem; margin-bottom: 2rem;">
-                        <h5 style="color: var(--primary); font-size: 0.7rem; margin-bottom: 0.75rem; text-transform: uppercase;">Relevant Policy Snippet</h5>
+                    <h4
+                        style="color: var(--primary); margin-bottom: 2rem; font-size: 0.75rem; text-transform: uppercase;">
+                        Policy Context & AI Verdict</h4>
+
+                    <div id="modal-policy-card"
+                        style="background: rgba(255,255,255,0.02); border: 1px solid var(--border); padding: 1.5rem; border-radius: 1rem; margin-bottom: 2rem;">
+                        <h5
+                            style="color: var(--primary); font-size: 0.7rem; margin-bottom: 0.75rem; text-transform: uppercase;">
+                            Relevant Policy Snippet</h5>
                         <p id="modal-policy-snippet" style="font-size: 0.85rem; line-height: 1.6; color: #fff;"></p>
                     </div>
 
                     <div style="margin-bottom: 2rem;">
-                        <h5 style="color: var(--danger); font-size: 0.7rem; margin-bottom: 0.75rem; text-transform: uppercase;">AI Citation (Wait for Auditor Review)</h5>
-                        <div id="modal-reason" style="font-weight: 700; font-size: 0.95rem; line-height: 1.5; color: #fff; background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--danger);"></div>
+                        <h5
+                            style="color: var(--danger); font-size: 0.7rem; margin-bottom: 0.75rem; text-transform: uppercase;">
+                            AI Citation (Wait for Auditor Review)</h5>
+                        <div id="modal-reason"
+                            style="font-weight: 700; font-size: 0.95rem; line-height: 1.5; color: #fff; background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 0.5rem; border-left: 4px solid var(--danger);">
+                        </div>
                     </div>
 
                     <div id="auditor-controls" style="margin-top: 4rem;">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <button onclick="updateAudit('Approved')" style="background: var(--success);">Confirm Approval</button>
-                            <button onclick="updateAudit('Rejected')" style="background: var(--danger);">Confirm Rejection</button>
+                            <button onclick="updateAudit('Approved')" style="background: var(--success);">Confirm
+                                Approval</button>
+                            <button onclick="updateAudit('Rejected')" style="background: var(--danger);">Confirm
+                                Rejection</button>
                         </div>
                     </div>
                 </div>
@@ -220,7 +277,7 @@
         async function login(role) {
             const username = document.getElementById('username-input').value.trim();
             if (!username) return alert("Enter your name first.");
-            
+
             const res = await fetch('/api/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -249,7 +306,7 @@
                 document.getElementById('main-content').style.display = 'block';
                 document.body.classList.remove('is-logged-out');
                 document.getElementById('user-role-badge').innerText = sessionUser.role.toUpperCase();
-                
+
                 if (sessionUser.role === 'auditor') { switchView('auditor'); }
                 else { switchView('employee'); pollNotifications(); }
                 loadData();
@@ -262,13 +319,13 @@
             if (v === 'auditor') {
                 document.getElementById('nav-auditor').classList.add('active');
                 document.getElementById('nav-employee').classList.remove('active');
-                if(document.getElementById('m-nav-auditor')) document.getElementById('m-nav-auditor').classList.add('active');
-                if(document.getElementById('m-nav-employee')) document.getElementById('m-nav-employee').classList.remove('active');
+                if (document.getElementById('m-nav-auditor')) document.getElementById('m-nav-auditor').classList.add('active');
+                if (document.getElementById('m-nav-employee')) document.getElementById('m-nav-employee').classList.remove('active');
             } else {
                 document.getElementById('nav-employee').classList.add('active');
                 document.getElementById('nav-auditor').classList.remove('active');
-                if(document.getElementById('m-nav-employee')) document.getElementById('m-nav-employee').classList.add('active');
-                if(document.getElementById('m-nav-auditor')) document.getElementById('m-nav-auditor').classList.remove('active');
+                if (document.getElementById('m-nav-employee')) document.getElementById('m-nav-employee').classList.add('active');
+                if (document.getElementById('m-nav-auditor')) document.getElementById('m-nav-auditor').classList.remove('active');
             }
         }
 
@@ -312,10 +369,10 @@
         function renderAuditor() {
             const body = document.getElementById('auditor-claims-body');
             // Sort by Risk (High first)
-            const sorted = [...currentClaims].sort((a,b) => (a.risk_level === 'High' ? -1 : 1));
+            const sorted = [...currentClaims].sort((a, b) => (a.risk_level === 'High' ? -1 : 1));
             body.innerHTML = sorted.map(c => `
                 <tr>
-                    <td><strong>${c.merchant}</strong><br><label style="font-size:0.7rem; color:var(--text-muted);">ID: ${c.id.substring(0,8)} | by ${c.employee}</label></td>
+                    <td><strong>${c.merchant}</strong><br><label style="font-size:0.7rem; color:var(--text-muted);">ID: ${c.id.substring(0, 8)} | by ${c.employee}</label></td>
                     <td>₹${c.amount}</td>
                     <td><span class="status-badge status-${c.risk_level}">${c.risk_level} Priority</span></td>
                     <td><span class="status-badge status-${c.status}">${c.status}</span></td>
@@ -337,7 +394,7 @@
             document.getElementById('modal-purpose').innerText = c.purpose;
             document.getElementById('modal-reason').innerText = c.reasoning;
             document.getElementById('modal-policy-snippet').innerText = c.policy_snippet;
-            
+
             document.getElementById('auditor-controls').style.display = (sessionUser.role === 'auditor') ? 'block' : 'none';
             document.getElementById('audit-modal').style.display = 'flex';
         }
@@ -373,4 +430,5 @@
         checkSession();
     </script>
 </body>
+
 </html>
