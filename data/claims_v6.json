@@ -1,0 +1,77 @@
+[
+    {
+        "id": "f7570a4c-c99a-47db-afd0-570352071e7c",
+        "image_url": "/static/uploads/c7f1ae7e-32f9-4d44-984b-b940a792b6b6_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "Local Vendor",
+        "category": "Miscellaneous",
+        "amount": 1076.13,
+        "date": "07-04-2026",
+        "purpose": "gift for client",
+        "status": "Flagged",
+        "risk_level": "Medium",
+        "reasoning": "Flagged: Miscellaneous limit is \u20b91000; claim was for \u20b91076.13 per Sec 4.1.",
+        "policy_snippet": "Refer to Section 1.1 for general guidelines.",
+        "ocr_data": {
+            "merchant": "Local Vendor",
+            "category": "Miscellaneous",
+            "amount": 1076.13,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "gst": {
+                "total": "\u20b960.18"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T19:40:20.063970"
+    },
+    {
+        "id": "2719af82-081a-4c6e-a938-d5830d20a6c0",
+        "image_url": "/static/uploads/2e71928e-715f-439c-812e-e5f26ada1c83_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "Local Vendor",
+        "category": "Miscellaneous",
+        "amount": 600.65,
+        "date": "07-04-2026",
+        "purpose": "gift for client",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: Claim adheres to policy guidelines for Section 1.1.",
+        "policy_snippet": "Refer to Section 1.1 for general guidelines.",
+        "ocr_data": {
+            "merchant": "Local Vendor",
+            "category": "Miscellaneous",
+            "amount": 600.65,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "gst": {
+                "total": "\u20b921.45"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T19:35:02.727861"
+    },
+    {
+        "id": "3df4b09a-a8bb-4f18-960a-1169db973ecd",
+        "image_url": "/static/uploads/40002521-8962-411a-ba34-67df2f550d0b_tripsheet.pdf",
+        "merchant": "Local Vendor",
+        "category": "Miscellaneous",
+        "amount": 4338.9,
+        "date": "07-04-2026",
+        "purpose": "personal trip",
+        "status": "Approved",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 2.5 - Prohibited spending (Alcohol/Personal) detected.",
+        "policy_snippet": "Refer to Section 1.1 for general guidelines.",
+        "ocr_data": {
+            "merchant": "Local Vendor",
+            "category": "Miscellaneous",
+            "amount": 4338.9,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "gst": {
+                "total": "\u20b918.59"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T19:33:27.242439"
+    }
+]

@@ -1,0 +1,186 @@
+[
+    {
+        "id": "541449f8-74d1-4a2a-8a27-9ce8dbb6b87d",
+        "filename": "e80ad151-bbcc-4881-8944-b0f79eea173c_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "image_url": "/static/uploads/e80ad151-bbcc-4881-8944-b0f79eea173c_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "Merchant_155",
+        "category": "Meals",
+        "amount": 8760.26,
+        "date": "07-04-2026",
+        "purpose": "gift for client",
+        "status": "Flagged",
+        "risk_level": "Medium",
+        "risk_score": 60,
+        "reasoning": "AI Audit Insight: Flagged. Risk Score: 60/100. Threshold exceeded for Meals (Limit: \u20b91500.0).",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "Merchant_155",
+            "category": "Meals",
+            "amount": 8760.26,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "items": [
+                "Item_Meals_A"
+            ],
+            "gst": {
+                "total": "Variable"
+            }
+        },
+        "employee": "Alex",
+        "timestamp": "2026-04-07T19:11:40.659610"
+    },
+    {
+        "id": "751a36e6-7f52-4412-aac2-91e22cabd2b7",
+        "filename": "e910453d-9f43-4f73-8266-047ea727c683_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "image_url": "/static/uploads/e910453d-9f43-4f73-8266-047ea727c683_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "Generic Merchant",
+        "category": "Misc",
+        "amount": 3362.78,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Approved",
+        "flags": [],
+        "reasoning": "Machine Auditor Analysis (Sec 1.1): Categorized as 'Misc' based on merchant profiling. Claim matches all India compliance standard checks for tax and amount thresholds.",
+        "timestamp": "2026-04-07T19:00:15.124171",
+        "employee": "alex"
+    },
+    {
+        "id": "0aed5bc4-37e4-4687-837c-6f1db6bd0e3f",
+        "filename": "db660a59-9a88-4b13-89f4-b2e0721dba51_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "image_url": "/static/uploads/db660a59-9a88-4b13-89f4-b2e0721dba51_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "Starbucks India",
+        "category": "Meals",
+        "amount": 6012.86,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Flagged",
+        "flags": [
+            "Threshold exceeded for Meals (Limit: \u20b91500.0)."
+        ],
+        "reasoning": "Analysis Note: The amount \u20b96012.86 exceeds the standard daily threshold of \u20b91500.0 for Meals. Per Section 2.1, additional justification for over-limit spends is required for internal reconciliation.",
+        "timestamp": "2026-04-07T17:21:13.126915",
+        "employee": "alice",
+        "currency": "INR"
+    },
+    {
+        "id": "349e6fbb-c7f8-4cb1-a1e7-9e4f77f03798",
+        "filename": "48e75de9-42f9-4d5a-b345-33596c6e8cf1_WhatsApp_Image_2026-04-06_at_23.47.31.jpeg",
+        "image_url": "/static/uploads/48e75de9-42f9-4d5a-b345-33596c6e8cf1_WhatsApp_Image_2026-04-06_at_23.47.31.jpeg",
+        "merchant": "Unknown Merchant",
+        "category": "General",
+        "amount": 0.0,
+        "date": "2026-04-07",
+        "currency": "USD",
+        "purpose": "shopping for raw material",
+        "status": "Flagged",
+        "flags": [
+            "Audit Gap: Receipt amount could not be parsed by OCR."
+        ],
+        "reasoning": "Compliance Note: The AI could not extract a clear amount from the uploaded receipt. Please ensure the receipt is legible. A manual review is required.",
+        "ocr_raw": "[OCR_NOTICE: Tesseract OCR engine is not installed on this server. Install Tesseract to enable full image OCR. PDF receipts are fully supported.]",
+        "ocr_method": "pytesseract/image",
+        "company_docs": [],
+        "timestamp": "2026-04-07T17:01:38.878979",
+        "employee": "Alice Johnson"
+    },
+    {
+        "id": "71738feb-ff2f-4ca6-bb59-d4f33e628f9b",
+        "filename": "ba983110-0d10-4069-89ad-9e9e7521a3d4_tripsheet.pdf",
+        "image_url": "/static/uploads/ba983110-0d10-4069-89ad-9e9e7521a3d4_tripsheet.pdf",
+        "merchant": "7575 80 4000",
+        "category": "Transport",
+        "amount": 10.3,
+        "date": "14-12-2025",
+        "currency": "USD",
+        "purpose": "tripsheet for the meeting\r\n",
+        "status": "Approved",
+        "flags": [],
+        "reasoning": "System Analysis: The claim appears compliant with standard corporate guidelines.",
+        "ocr_raw": "7575 80 4000\nlGo4cabs\nTrip Sheet\nEasyt o GO.\nJourney: | Local| Date 14-12-2025\nName of Company\nPassenger Details Ms. Richin Kottaraman Contact No.\nChauffeur Details\nCar Registration\nVehicle Details Suzuki DZire Number\nGO4Cabs - Reporting details\nHotel Pearl Palace\nChittoor Rd, behind ShenoyS,\nPick-Up Location\nYMCA Junction, Shenoys, Kochi,\nErnakulam Drop Address\n14-12-2025 14-12-2025\nPick-Up Date Drop Date\nReporting time\nStart time\nStart Time Release Time\nReporting Time 9-36 Am 10.30 am dose Time\nRelease KM Reading JG849\nStarting KM Reading 63+44\nEnd KM Reading dose KM Reading\nH3 km\nTureotal KMS Total Time\nGO4Cabs - Journey Details\n|L ocal-Kochi at disposal\nJourney\nInstructions\n| BTC |\nPayment Mode:\nFeedback/Signature Please Sign the trip sheet at release\nGO4Cabs Mobility PAN India 75 Cities\nLocal | Outstation |L uxury cab |1 Waycab | Coaches | Self Drive|\nVisit to Centre Address\nTarget Learning 2nd floor, Chenchery Building, Above HDFC bank, MGR oad, Metro\nCentre, pillar 709, Kochi",
+        "ocr_method": "pdfplumber",
+        "company_docs": [],
+        "timestamp": "2026-04-06T20:18:02.280086",
+        "employee": "Bob Smith"
+    },
+    {
+        "id": "6df74dbc-357d-4c02-905a-7e6881de4649",
+        "filename": "4c160b8d-01a7-4518-97d7-692628d961bc_tripsheet.pdf",
+        "image_url": "/static/uploads/4c160b8d-01a7-4518-97d7-692628d961bc_tripsheet.pdf",
+        "merchant": "Starbucks",
+        "category": "Meals",
+        "amount": 431.09,
+        "date": "2026-04-05",
+        "purpose": "trip sheet",
+        "status": "Flagged",
+        "flags": [
+            "Standard threshold exceeded for Meals."
+        ],
+        "reasoning": "Analysis Note: The amount $431.09 exceeds the standard daily allowance of $50.0 for Meals. Per Section 2.1, amounts over the limit require specific departmental justification or proof of exceptional circumstances.",
+        "timestamp": "2026-04-05T08:54:57.116133",
+        "employee": "alex"
+    },
+    {
+        "id": "1afdc0c7-1e17-4289-a660-35be38cce027",
+        "filename": "c48cb30b-c215-449c-826d-31e09e6d9dad_tripsheet.pdf",
+        "image_url": "/static/uploads/c48cb30b-c215-449c-826d-31e09e6d9dad_tripsheet.pdf",
+        "merchant": "Delta Air",
+        "category": "Transport",
+        "amount": 142.01,
+        "date": "2026-04-05",
+        "purpose": "trip sheet for the survey",
+        "status": "Flagged",
+        "flags": [
+            "Standard threshold exceeded for Transport."
+        ],
+        "reasoning": "Analysis Note: The amount $142.01 exceeds the standard daily allowance of $100.0 for Transport. Per Section 2.1, amounts over the limit require specific departmental justification or proof of exceptional circumstances.",
+        "timestamp": "2026-04-05T08:51:55.391194",
+        "employee": "Alex"
+    },
+    {
+        "id": "3af9ae63-3f2b-4e40-9256-0e3510d3e09d",
+        "filename": "25ba679b-8e4f-4895-a23e-c560e935bd8a_tripsheet.pdf",
+        "image_url": "/static/uploads/25ba679b-8e4f-4895-a23e-c560e935bd8a_tripsheet.pdf",
+        "merchant": "Starbucks",
+        "category": "Meals",
+        "amount": 424.53,
+        "date": "2026-04-05",
+        "purpose": "tripsheet",
+        "status": "Flagged",
+        "flags": [
+            "Standard threshold exceeded for Meals."
+        ],
+        "reasoning": "Analysis Note: The amount $424.53 exceeds the standard daily allowance of $50.0 for Meals. Per Section 2.1, amounts over the limit require specific departmental justification or proof of exceptional circumstances.",
+        "timestamp": "2026-04-05T08:46:10.959768",
+        "employee": "User"
+    },
+    {
+        "id": "735272e4-e692-4614-94e2-58427884e5f1",
+        "filename": "8219bdad-489b-4e31-9749-8f59e9947ff4_activity_diagramref.png",
+        "image_url": "/static/uploads/8219bdad-489b-4e31-9749-8f59e9947ff4_activity_diagramref.png",
+        "merchant": "Starbucks",
+        "category": "Meals",
+        "amount": 314.35,
+        "date": "2026-04-05",
+        "purpose": "Team strategy lunch",
+        "status": "Flagged",
+        "flags": [
+            "Standard threshold exceeded for Meals."
+        ],
+        "reasoning": "Analysis Note: The amount $314.35 exceeds the standard daily allowance of $50.0 for Meals. Per Section 2.1, amounts over the limit require specific departmental justification or proof of exceptional circumstances.",
+        "timestamp": "2026-04-05T08:39:08.803855",
+        "employee": "Alex"
+    },
+    {
+        "id": "333cc48e-fed7-437a-9870-3b8f4651a075",
+        "filename": "b479a7a4-f5b5-4464-9d6a-30ec11b39ae2_Screenshot (1).png",
+        "image_url": "/static/uploads/b479a7a4-f5b5-4464-9d6a-30ec11b39ae2_Screenshot (1).png",
+        "merchant": "Office Max",
+        "category": "Office Supplies",
+        "amount": 139.73,
+        "date": "2026-04-05",
+        "purpose": "client lunch at new york\r\n",
+        "status": "Rejected",
+        "flags": [],
+        "timestamp": "2026-04-05T08:18:26.513209"
+    }
+]

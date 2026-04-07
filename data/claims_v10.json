@@ -1,0 +1,470 @@
+[
+    {
+        "id": "2042e479-42bf-48d1-81f7-a89c31adcf34",
+        "image_url": "/static/uploads/d8cf6f6a-21ca-4e02-97ec-c6768891f557_tiffin centre.jpeg",
+        "merchant": "PAID",
+        "category": "Meals",
+        "amount": 230.0,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim is compliant with Section 1.1 Policy.",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "PAID",
+            "category": "Meals",
+            "amount": 230.0,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "PAID | Babu | Tiffin Center | No;49, A.NLE Salal ( Oll Mili | Road), | Ivappanthangal, | Chennai-600056 | Cont- 044 46170470, Mob- | 8124748494 | From Zomato[7197413726]...",
+            "gst": {
+                "total": "\u20b911.5"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:38.174930"
+    },
+    {
+        "id": "c534707a-41af-446e-b2c5-6ae1f8fddefd",
+        "image_url": "/static/uploads/f7dd0036-1e47-4a51-84a6-0eca338309da_tiffin centre.jpeg",
+        "merchant": "PAID",
+        "category": "Meals",
+        "amount": 230.0,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim is compliant with Section 1.1 Policy.",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "PAID",
+            "category": "Meals",
+            "amount": 230.0,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "PAID | Babu | Tiffin Center | No;49, A.NLE Salal ( Oll Mili | Road), | Ivappanthangal, | Chennai-600056 | Cont- 044 46170470, Mob- | 8124748494 | From Zomato[7197413726]...",
+            "gst": {
+                "total": "\u20b911.5"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:36.098881"
+    },
+    {
+        "id": "338ceab9-912e-47f4-8d30-1dcc4900798f",
+        "image_url": "/static/uploads/92a4332b-8e77-4034-a80c-a6c20cae5b5e_tiffin centre.jpeg",
+        "merchant": "PAID",
+        "category": "Meals",
+        "amount": 230.0,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim is compliant with Section 1.1 Policy.",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "PAID",
+            "category": "Meals",
+            "amount": 230.0,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "PAID | Babu | Tiffin Center | No;49, A.NLE Salal ( Oll Mili | Road), | Ivappanthangal, | Chennai-600056 | Cont- 044 46170470, Mob- | 8124748494 | From Zomato[7197413726]...",
+            "gst": {
+                "total": "\u20b911.5"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:35.277749"
+    },
+    {
+        "id": "8849e360-658b-402e-81e5-cb0086d0a53b",
+        "image_url": "/static/uploads/b2eef224-324f-41ae-898a-6ddbdb22b6f6_tiffin centre.jpeg",
+        "merchant": "PAID",
+        "category": "Meals",
+        "amount": 230.0,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim is compliant with Section 1.1 Policy.",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "PAID",
+            "category": "Meals",
+            "amount": 230.0,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "PAID | Babu | Tiffin Center | No;49, A.NLE Salal ( Oll Mili | Road), | Ivappanthangal, | Chennai-600056 | Cont- 044 46170470, Mob- | 8124748494 | From Zomato[7197413726]...",
+            "gst": {
+                "total": "\u20b911.5"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:35.138187"
+    },
+    {
+        "id": "e7803b51-5948-4cf6-94a8-b713aceafbb3",
+        "image_url": "/static/uploads/b0e5a8e8-379f-4954-a34d-2fac6c0f3300_tiffin centre.jpeg",
+        "merchant": "PAID",
+        "category": "Meals",
+        "amount": 230.0,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim is compliant with Section 1.1 Policy.",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "PAID",
+            "category": "Meals",
+            "amount": 230.0,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "PAID | Babu | Tiffin Center | No;49, A.NLE Salal ( Oll Mili | Road), | Ivappanthangal, | Chennai-600056 | Cont- 044 46170470, Mob- | 8124748494 | From Zomato[7197413726]...",
+            "gst": {
+                "total": "\u20b911.5"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:34.706476"
+    },
+    {
+        "id": "041ea5b8-f5a9-46ec-84de-d68e3e852b9e",
+        "image_url": "/static/uploads/b3c37614-4147-46e7-b4a1-de0f8f717105_tiffin centre.jpeg",
+        "merchant": "PAID",
+        "category": "Meals",
+        "amount": 230.0,
+        "date": "07-04-2026",
+        "purpose": "shopping",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim is compliant with Section 1.1 Policy.",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "PAID",
+            "category": "Meals",
+            "amount": 230.0,
+            "date": "07-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "PAID | Babu | Tiffin Center | No;49, A.NLE Salal ( Oll Mili | Road), | Ivappanthangal, | Chennai-600056 | Cont- 044 46170470, Mob- | 8124748494 | From Zomato[7197413726]...",
+            "gst": {
+                "total": "\u20b911.5"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:34.559803"
+    },
+    {
+        "id": "55301178-9380-4274-940a-1630da6a2851",
+        "image_url": "/static/uploads/12bdafd9-7c87-4d9b-924f-933aadc766aa_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:32.170922"
+    },
+    {
+        "id": "90362a10-b4f7-435c-b7bf-00856bb6eb10",
+        "image_url": "/static/uploads/3a56c2c8-c07e-4f91-941b-9e8145d12f74_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:27.325144"
+    },
+    {
+        "id": "1cc7efbd-439a-4586-92c9-7ffe5fdf1d8a",
+        "image_url": "/static/uploads/0e5122cb-88ac-442f-bc9d-35a029f67c0b_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:22.871388"
+    },
+    {
+        "id": "470e80db-f917-4a44-9013-c0afd575c398",
+        "image_url": "/static/uploads/e5fec242-2413-4fca-b616-9468d2f7ce32_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:22.803472"
+    },
+    {
+        "id": "827204d6-9bd3-4b7e-babb-f94081d2de11",
+        "image_url": "/static/uploads/61ce2275-3c77-4e14-8f3f-1f4cd81a17e2_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:20.204004"
+    },
+    {
+        "id": "3e08b733-42d9-4ad0-a572-9d6c8afdd4e8",
+        "image_url": "/static/uploads/cb27b724-e383-4381-9822-64de1f77c8ce_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:19.558567"
+    },
+    {
+        "id": "7a5ca760-5cdc-408b-976a-66ac883e29fb",
+        "image_url": "/static/uploads/a9df1149-0be3-46dc-8349-f94f858616bd_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:04.317420"
+    },
+    {
+        "id": "c5ab728c-7951-4c11-96b5-670c1a859d07",
+        "image_url": "/static/uploads/ea68e30e-ee2e-4305-abb0-e49ece4823c8_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:37:00.525963"
+    },
+    {
+        "id": "c93348c1-31c0-4ece-958d-adce9377b3a2",
+        "image_url": "/static/uploads/fd172340-63b9-4dbf-8dcf-8c437b6fd328_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:36:57.812930"
+    },
+    {
+        "id": "1bb76b8c-19fe-40a0-bf1c-0cdff8829762",
+        "image_url": "/static/uploads/f694e087-f72f-4361-9dae-59d560a415d9_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:36:55.357027"
+    },
+    {
+        "id": "40037803-8186-4e95-8323-71580db63dcd",
+        "image_url": "/static/uploads/433d7a9f-d553-4b05-8527-38a57a30c8eb_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:36:55.290975"
+    },
+    {
+        "id": "b3b3a289-77a0-4197-9544-2fdcf6fe4b7e",
+        "image_url": "/static/uploads/9cbc9c87-b45c-4240-82bb-fdf9cb295b3a_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Violation of Sec 12.3 - Retail/Textile spend requires 'Gift' or 'Uniform' justification.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333...",
+            "gst": {
+                "total": "\u20b97.95"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:36:53.857524"
+    }
+]

@@ -1,0 +1,83 @@
+[
+    {
+        "id": "42bdf5fc-5acb-4a3c-9eae-cb0e9be429af",
+        "image_url": "/static/uploads/070863de-3c4e-4394-aa8a-ed14e49ae608_tiffin centre.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "tiffin box",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Retail/Textile spend requires 'Gift' or 'Uniform' justification per Sec 12.3.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "gst": {
+                "total": "\u20b97.58",
+                "cgst": "3.79",
+                "sgst": "3.79"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:20:10.399255"
+    },
+    {
+        "id": "f481f420-3f9f-47f7-8beb-6b7ad431f520",
+        "image_url": "/static/uploads/165a1830-7dd6-4ef4-ab0a-c858f382da63_tiffin centre.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Retail/Textile spend requires 'Gift' or 'Uniform' justification per Sec 12.3.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "gst": {
+                "total": "\u20b97.58",
+                "cgst": "3.79",
+                "sgst": "3.79"
+            }
+        },
+        "employee": "Unknown",
+        "timestamp": "2026-04-07T20:19:33.848660"
+    },
+    {
+        "id": "83f7a9f5-4861-4e96-8e7d-655f45d38485",
+        "image_url": "/static/uploads/8f345a33-fb0c-4fa4-8125-c048ca20f857_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "client gift",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim is within policy limits for Section 1.1.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "gst": {
+                "total": "\u20b97.58",
+                "cgst": "3.79",
+                "sgst": "3.79"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T19:43:59.461128"
+    }
+]

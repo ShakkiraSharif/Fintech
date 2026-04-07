@@ -1,0 +1,56 @@
+[
+    {
+        "id": "4bff86e8-9112-480a-ac1b-71a2dd4590e8",
+        "image_url": "/static/uploads/fd95250b-2181-40d9-b16a-1c9ea25e2a6a_tiffin centre.jpeg",
+        "merchant": "PAID",
+        "category": "Meals",
+        "amount": 230.0,
+        "date": "24-08-25",
+        "purpose": "meals",
+        "status": "Approved",
+        "risk_level": "Low",
+        "reasoning": "Approved: This claim adheres to Indian Corporate Policy Section 1.1.",
+        "policy_snippet": "Capped at \u00e2\u201a\u00b91,500/day. Receipts must show itemized GST breakdown for input tax credit.",
+        "ocr_data": {
+            "merchant": "PAID",
+            "category": "Meals",
+            "amount": 230.0,
+            "date": "24-08-25",
+            "currency": "INR",
+            "raw_text_snippet": "PAID | Babu | Tiffin Center | No;49, A.NLE Salal ( Oll Mili | Road), | Ivappanthangal, | Chennai-600056 | Cont- 044 46170470, Mob- | 8124748494 | From Zomato[7197413726]...",
+            "gst": {
+                "total": "\u20b911.5"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:46:26.775246"
+    },
+    {
+        "id": "d7891856-87f9-435f-86b1-bc2e84699d05",
+        "image_url": "/static/uploads/288e98d5-8493-41b2-8f11-57ca6512200c_WhatsApp Image 2026-04-06 at 23.47.31.jpeg",
+        "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+        "category": "Retail / Lifestyle",
+        "amount": 159.0,
+        "date": "05-04-2026",
+        "purpose": "shopping",
+        "status": "Rejected",
+        "risk_level": "High",
+        "reasoning": "Rejected: Retail/Textile spend requires 'Gift' or 'Uniform' justification per Sec 12.3.",
+        "policy_snippet": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID.",
+        "ocr_data": {
+            "merchant": "POTHYS RETAIL PRIVATE LIMITED",
+            "category": "Retail / Lifestyle",
+            "amount": 159.0,
+            "date": "05-04-2026",
+            "currency": "INR",
+            "raw_text_snippet": "Pothys RETAIL PRIVATE LIMITED | KC 65/4875/A-B | Banerji | Kaloor | Cochin | 682017 | Phone | 0484 2402333 | 2404333 | 2405333 | Fax: 04842400033 | CIN: U52190TN2O20PTC136192...",
+            "gst": {
+                "total": "\u20b97.58",
+                "cgst": "3.79",
+                "sgst": "3.79"
+            }
+        },
+        "employee": "alex",
+        "timestamp": "2026-04-07T20:46:00.053474"
+    }
+]

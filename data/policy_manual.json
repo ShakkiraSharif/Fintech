@@ -1,0 +1,36 @@
+{
+    "company_name": "Antigravity FinTech - Compliance Standards",
+    "currency": "INR",
+    "categories": {
+        "Meals": {
+            "daily_limit": 1500.00,
+            "prohibited_items": ["Alcohol", "Tobacco"],
+            "requires_gst": true,
+            "policy_section": "Sec 4.1",
+            "rules": "Capped at ₹1,500/day. Receipts must show itemized GST breakdown for input tax credit."
+        },
+        "Transport": {
+            "daily_limit": 2500.00,
+            "allowed_types": ["Uber", "Ola", "Taxi", "Auto"],
+            "policy_section": "Sec 2.2",
+            "rules": "Local transport up to ₹2,500/day. Outstation travel requires prior manager approval."
+        },
+        "Lodging": {
+            "daily_limit": 5000.00,
+            "policy_section": "Sec 5.1",
+            "rules": "Budget hotels up to ₹5,000/night. Mini-bar and personal items are not reimbursable."
+        },
+        "Retail / Lifestyle": {
+            "daily_limit": 2000.00,
+            "policy_section": "Sec 12.3",
+            "rules": "Includes textiles, clothing, and lifestyle retail. Only permissible for 'Client Gifts' or 'Employee Uniforms'. Requires a justifying event ID."
+        }
+    },
+    "audit_logic": {
+        "step_1": "OCR Text Extraction: Identify Merchant, Items, Amount, and GST components.",
+        "step_2": "Category Classification: Use keywords (e.g., 'Lifestyle', 'Food') to match against policy categories.",
+        "step_3": "Limit Validation: Cross-reference amount against the category threshold (₹).",
+        "step_4": "Violation Check: Flag prohibited items (e.g. Alcohol) or missing GST details.",
+        "step_5": "Risk Scoring: Assign status (Approved, Flagged, Rejected) based on compliance severity."
+    }
+}
